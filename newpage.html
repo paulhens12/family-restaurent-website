@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="head">family restaurent</div>
+      <ul class="list">
+        <li><button class="home" onclick="homey()">home</button></li>
+        <li><a onclick='scrollToAbout()' class="abt_btn">about</a></li>
+        <li><a href="help">help</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="greet">
+        hi <span class="inputname"></span> welcome to family restaurent
+        <br />
+        <br />
+        enjoy your day with your family
+      </h2>
+    </div>
+    <hr class="ruler" />
+    <p class="non-veg">*scrool down for <b>non-veg menu</b></p>
+    <p class="non-veg">*scrool down for <b>beverages</b></p>
+    <p class="non-veg">*scrool down for <b>place your order</b></p>
+    <hr class="ruler" />
+    <div class="veg">
+      <img
+        src="https://freesvg.org/img/1531813273.png"
+        alt="no img"
+        class="vegimg"
+      />
+      <p class="vegkey">veg<span> menu</span></p>
+    </div>
+    <p class="amount">price = ₹ <span class="price">00</span></p>
+    
+    <div class="veg_items">
+      <div class="v1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtui9UFC6zzGTjunV7vkXiXuyOvdjtaQj0A&usqp=CAU"
+          alt="no img"
+        />
+        <p class="v1_text"><span class="item">veg meals</span><br> price = ₹          <span class="rate">120<span>
+        </p>
+        <p><button class="v1_sub sub">-</button><span class="v1_count count">0</span><button class="v1_add add">+</button></p>
+      </div>
+      <div class="v2">
+        <img src="https://bfoodale.com/uploads/2022/01/Veg-Fried-Rice.jpg" alt="">
+        <p class="v2_text"><span class="item">veg fried rice</span><br> price = ₹<span class="rate">90<span>
+        </p>
+        <button class="v2_sub sub">-</button><span class="v2_count count">0</span><button class="v2_add add">+</button>
+      </div>
+      <div class="v3">
+        <img src="https://www.sandyathome.com/wp-content/uploads/2016/08/file6-3-1280x720.jpeg" alt="no img">
+        <p class="v3_text"><span class="item">veg noodles</span><br> price = ₹<span class="rate">100<span>
+        </p>
+        <button class="v3_sub sub">-</button><span class="v3_count count">0</span><button class="v3_add add">+</button>
+      </div>
+      <div class="v4">
+        <img src="https://epicurasian.in/image/cache/catalog/Rice/Rice-Veg/mushroom-fried-rice-700x700.png" alt="no img">
+        <p class="v4_text"><span class="item">mushroom fried rice</span><br> price = ₹<span class="rate">120<span>
+        </p>
+        <button class="v4_sub sub">-</button><span class="v4_count count">0</span><button class="v4_add add">+</button>
+      </div>
+      <div class="v5">
+        <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-butter-masala-recipe-3-500x500.jpg" alt="no img">
+        <p class="v5_text"><span class="item">paneer butter masala</span><br> price = ₹<span class="rate">110<span>
+        </p>
+        <button class="v5_sub sub">-</button><span class="v5_count count">0</span><button class="v5_add add">+</button>
+      </div>
+      <div class="v6">
+        <img src="https://static.toiimg.com/photo/75534551.cms" alt="no img">
+        <p class="v6_text"><span class="item">mushroom masala</span><br> price = ₹<span class="rate">110<span>
+        </p>
+        <button class="v6_sub sub">-</button><span class="v6_count count">0</span><button class="v6_add add">+</button>
+      </div>
+      <div class="v7">
+        <img src="https://www.sharmispassions.com/wp-content/uploads/2020/12/48114381466_2974661f36_o.jpg" alt="no img">
+        <p class="v7_text"><span class="item">kali (4 nos)</span><br> price = ₹<span class="rate">120<span>
+        </p>
+        <button class="v7_sub sub">-</button><span class="v7_count count">0</span><button class="v7_add add">+</button>
+      </div>
+      <div class="v8">
+        <img src="https://asmallbite.com/wp-content/uploads/2019/07/Aadi-Koozh-Recipe.png" alt="no img">
+        <p class="v8_text"><span class="item">keppai koozh</span><br> price = ₹<span class="rate">50<span>
+        </p>
+        <button class="v8_sub sub">-</button><span class="v8_count count">0</span><button class="v8_add add">+</button>
+      </div>
+      <div class="v9">
+        <img src="https://www.lekhafoods.com/media/202144/kuzhi-paniyaram.jpg" alt="no img">
+        <p class="v9_text"><span class="item">kuzhi panayaram (10 nos)</span><br> price = ₹<span class="rate">80<span>
+        </p>
+        <button class="v9_sub sub">-</button><span class="v9_count count">0</span><button class="v9_add add">+</button>
+      </div><div class="v10">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/egg-curry-recipe.jpg" alt="no img">
+        <p class="v10_text"><span class="item">egg masala</span><br> price = ₹<span class="rate">100<span>
+        </p>
+        <button class="v10_sub sub">-</button><span class="v10_count count">0</span><button class="v10_add add">+</button>
+      </div>
+    </div>
+    <hr class="ruler" />
+    <p class="non-veg">*scrool down for <b>beverages</b></p>
+    <p class="non-veg">*scrool down for <b>place your order</b></p>
+    <hr class="ruler" />
+    <div class="nv">
+      <img
+        src="https://freesvg.org/img/1531813245.png"
+        alt="no img"
+        class="nvimg"
+      />
+      <p class="nvkey">non-veg<span> menu</span></p>
+    </div>
+
+    <div class="nv_items">
+      <div class="nv1">
+        <img
+          src="https://static.toiimg.com/thumb/53096628.cms?imgsize=104874&width=800&height=800"
+          alt="no img"
+        />
+        <p class="nv1_text"><span class="item">chicken biryani</span><br> price = ₹ <span class="rate">160<span>
+        </p>
+        <p><button class="nv1_sub sub">-</button><span class="nv1_count count">0</span><button class="nv1_add add">+</button></p>
+      </div>
+      <div class="nv2">
+        <img
+          src="https://bfoodale.com/uploads/2021/12/Mutton-Biryani.jpg"
+          alt="no img"
+        />
+        <p class="nv2_text"><span class="item">mutton biryani</span><br> price = ₹ <span class="rate">200<span>
+        </p>
+        <p><button class="nv2_sub sub">-</button><span class="nv2_count count">0</span><button class="nv2_add add">+</button></p>
+      </div>
+      <div class="nv3">
+        <img
+          src="https://www.a2arestaurant.com/wp-content/uploads/2020/11/Non-veg-Meals.jpg"
+          alt="no img"
+        />
+        <p class="nv3_text"><span class="item">non-veg meals</span><br> price = ₹ <span class="rate">150<span>
+        </p>
+        <p><button class="nv3_sub sub">-</button><span class="nv3_count count">0</span><button class="nv3_add add">+</button></p>
+      </div>
+      <div class="nv4">
+        <img
+          src="https://www.kannammacooks.com/wp-content/uploads/mixed-fried-rice-recipe-1-4.jpg"
+          alt="no img"
+        />
+        <p class="nv4_text"><span class="item">chicken fried rice</span><br> price = ₹ <span class="rate">120<span>
+        </p>
+        <p><button class="nv4_sub sub">-</button><span class="nv4_count count">0</span><button class="nv4_add add">+</button></p>
+      </div>
+      <div class="nv5">
+        <img
+          src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/exps108597_SD163324B08_06_4b.jpg"
+          alt="no img"
+        />
+        <p class="nv5_text"><span class="item">chicken noodles</span><br> price = ₹ <span class="rate">130<span>
+        </p>
+        <p><button class="nv5_sub sub">-</button><span class="nv5_count count">0</span><button class="nv5_add add">+</button></p>
+      </div>
+      <div class="nv6">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5c844f05fb22a510b5fa6c1d/1591684800936-TP927KER35QOXQDOBOMC/Canva+-+Tandoori+chicken+whole+with+naan+and+raita.jpg"
+          alt="no img"
+        />
+        <p class="nv6_text"><span class="item">half tandoori</span><br> price = ₹ <span class="rate">160<span>
+        </p>
+        <p><button class="nv6_sub sub">-</button><span class="nv6_count count">0</span><button class="nv6_add add">+</button></p>
+      </div>
+      <div class="nv7">
+        <img
+          src="https://www.licious.in/blog/wp-content/uploads/2020/12/Tandoori-Chicken.jpg"
+          alt="no img"
+        />
+        <p class="nv7_text"><span class="item">full tandoori</span><br> price = ₹ <span class="rate">320<span>
+        </p>
+        <p><button class="nv7_sub sub">-</button><span class="nv7_count count">0</span><button class="nv7_add add">+</button></p>
+      </div>
+      <div class="nv8">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOZxPtOWNw0LLjFO-IaMKRAxzMw8Mi-VR8w&usqp=CAU"
+          alt="no img"
+        />
+        <p class="nv8_text"><span class="item">shawarma</span><br> price = ₹ <span class="rate">80<span>
+        </p>
+        <p><button class="nv8_sub sub">-</button><span class="nv8_count count">0</span><button class="nv8_add add">+</button></p>
+      </div>
+      <div class="nv9">
+        <img
+          src="https://maunikagowardhan.co.uk/wp-content/uploads/2014/11/Indo-Chinese-Chilli-Chicken-scaled.jpg"
+          alt="no img"
+        />
+        <p class="nv9_text"><span class="item">chilli chicken</span><br> price = ₹ <span class="rate">120<span>
+        </p>
+        <p><button class="nv9_sub sub">-</button><span class="nv9_count count">0</span><button class="nv9_add add">+</button></p>
+      </div>
+      <div class="nv10">
+        <img
+          src="https://recipesaresimple.com/wp-content/uploads/2015/07/chicken-lollipop-with-gree-chilli-mayo-recipe.jpg"
+          alt="no img"
+        />
+        <p class="nv10_text"><span class="item">chicken lolli pop (8 nos)</span><br> price = ₹ <span class="rate">100<span>
+        </p>
+        <p><button class="nv10_sub sub">-</button><span class="nv10_count count">0</span><button class="nv10_add add">+</button></p>
+      </div>
+      <div class="nv11">
+        <img
+          src="https://static.toiimg.com/photo/60425532.cms?width=500&resizemode=4&imgsize=141231"
+          alt="no img"
+        />
+        <p class="nv11_text"><span class="item">chicken 65 (1 plate)</span><br> price = ₹ <span class="rate">100<span>
+        </p>
+        <p><button class="nv11_sub sub">-</button><span class="nv11_count count">0</span><button class="nv11_add add">+</button></p>
+      </div>
+      <div class="nv12">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSra6ibJOUIuq76F4XHkJ0eraqMam1X_DI_-g&usqp=CAU"
+          alt="no img"
+        />
+        <p class="nv12_text"><span class="item">fish fry (1 full)</span><br> price = ₹ <span class="rate">150<span>
+        </p>
+        <p><button class="nv12_sub sub">-</button><span class="nv12_count count">0</span><button class="nv12_add add">+</button></p>
+      </div>
+      <div class="nv13">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCGk2RX6oQLDjp3JtvGjqCAgGRvg9QApCzdefDB--5xvlkphnwr088INNGcWT-UliUaI&usqp=CAU"
+          alt="no img"
+        />
+        <p class="nv13_text"><span class="item">pepper chicken gravy</span><br> price = ₹ <span class="rate">120<span>
+        </p>
+        <p><button class="nv13_sub sub">-</button><span class="nv13_count count">0</span><button class="nv13_add add">+</button></p>
+      </div>
+      <div class="nv14">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktXZjqSwOb7eKk58XjP-iTMk2DEvRpuu0fA&usqp=CAU"
+          alt="no img"
+        />
+        <p class="nv14_text"><span class="item">chettinad chicken gravy</span><br> price = ₹ <span class="rate">140<span>
+        </p>
+        <p><button class="nv14_sub sub">-</button><span class="nv14_count count">0</span><button class="nv14_add add">+</button></p>
+      </div>
+      <div class="nv15">
+        <img
+          src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/jyothir/Kerala_Mutton_Pepper_Fry.jpg"
+          alt="no img"
+        />
+        <p class="nv15_text"><span class="item">mutton pepper fry</span><br> price = ₹ <span class="rate">180<span>
+        </p>
+        <p><button class="nv15_sub sub">-</button><span class="nv15_count count">0</span><button class="nv15_add add">+</button></p>
+      </div>
+    </div>
+
+    <hr class="ruler" />
+    <p class="non-veg">*scrool down for <b>place your order</b></p>
+    <hr class="ruler" />
+    <div class="bev">
+      <img style="border: 2px solid rgb(80, 78, 199); border-radius: 10px;"
+        src="https://img.icons8.com/external-rabit-jes-detailed-outline-rabit-jes/512/external-beverage-hotel-rabit-jes-detailed-outline-rabit-jes.png"
+        alt="no img"
+        class="bevimg"
+      />
+      <p class="bevkey">beverages<span> menu</span></p>
+    </div>
+
+    <div class="bev_items">
+      <div class="b1">
+        <img src="https://c.ndtvimg.com/2023-03/s9asv7j8_chocolatey-lassi_120x90_27_March_23.jpg" alt="">
+        <p class="b1_text"><span class="item">Chocolatey Lassi</span><br> price = ₹ <span class="rate">80<span>
+        </p>
+        <p><button class="b1_sub sub">-</button><span class="b1_count count">0</span><button class="b1_add add">+</button></p>
+      </div>
+
+      <div class="b2">
+        <img src="https://c.ndtvimg.com/2022-07/2gmog5r_mojito_120x90_28_July_22.jpg" alt="">
+        <p class="b2_text"><span class="item">kaffir mojito</span><br> price = ₹ <span class="rate">40<span>
+        </p>
+        <p><button class="b2_sub sub">-</button><span class="b2_count count">0</span><button class="b2_add add">+</button></p>
+      </div>
+
+      <div class="b3">
+        <img src="https://c.ndtvimg.com/2022-04/ok1qn3g8_mint-sharbat_120x90_19_April_22.jpg" alt="">
+        <p class="b3_text"><span class="item">mint gur sharbat</span><br> price = ₹ <span class="rate">50<span>
+        </p>
+        <p><button class="b3_sub sub">-</button><span class="b3_count count">0</span><button class="b3_add add">+</button></p>
+      </div>
+
+      <div class="b4">
+        <img src="https://c.ndtvimg.com/2022-03/ssumhqvo_thandai-_120x90_15_March_22.jpg" alt="">
+        <p class="b4_text"><span class="item">strawberry thandai</span><br> price = ₹ <span class="rate">80<span>
+        </p>
+        <p><button class="b4_sub sub">-</button><span class="b4_count count">0</span><button class="b4_add add">+</button></p>
+      </div>
+
+      <div class="b5">
+        <img src="https://c.ndtvimg.com/2021-04/v5df7qj8_plum-date-sharbat-milk_120x90_22_April_21.jpg" alt="">
+        <p class="b5_text"><span class="item">plum & date sharbat</span><br> price = ₹ <span class="rate">100<span>
+        </p>
+        <p><button class="b5_sub sub">-</button><span class="b5_count count">0</span><button class="b5_add add">+</button></p>
+      </div>
+
+      <div class="b6">
+        <img src="https://www.ndtv.com/cooks/images/the-hungry-money-new.jpg" alt="">
+        <p class="b6_text"><span class="item">genie in a bottle</span><br> price = ₹ <span class="rate">70<span>
+        </p>
+        <p><button class="b6_sub sub">-</button><span class="b6_count count">0</span><button class="b6_add add">+</button></p>
+      </div>
+
+      <div class="b7">
+        <img src="https://www.ndtv.com/cooks/images/watermelon%20lychee%20granita.jpg" alt="">
+        <p class="b7_text"><span class="item">watermelon lichee granita</span><br> price = ₹ <span class="rate">70<span>
+        </p>
+        <p><button class="b7_sub sub">-</button><span class="b7_count count">0</span><button class="b7_add add">+</button></p>
+      </div>
+
+      <div class="b8">
+        <img src="https://www.ndtv.com/cooks/images/strawberry-guava-smoothie-620.jpg" alt="">
+        <p class="b8_text"><span class="item">strawberry & guava smoothie</span><br> price = ₹ <span class="rate">90<span>
+        </p>
+        <p><button class="b8_sub sub">-</button><span class="b8_count count">0</span><button class="b8_add add">+</button></p>
+      </div>
+
+      <div class="b9">
+        <img src="https://c.ndtvimg.com/2020-08/i15647pg_smoothie_120x90_06_August_20.jpg" alt="">
+        <p class="b9_text"><span class="item">banana & honey smoothie</span><br> price = ₹ <span class="rate">80<span>
+        </p>
+        <p><button class="b9_sub sub">-</button><span class="b9_count count">0</span><button class="b9_add add">+</button></p>
+      </div>
+      <div class="b10">
+        <img src="https://i.ndtvimg.com/i/2018-05/juice_240x180_41525329231.jpg" alt="">
+        <p class="b10_text"><span class="item">pomegranate juice</span><br> price = ₹ <span class="rate">70<span>
+        </p>
+        <p><button class="b10_sub sub">-</button><span class="b10_count count">0</span><button class="b10_add add">+</button></p>
+      </div>
+    </div>
+    <div class="order">
+      <button onclick="placeOrder()">place order</button>
+      <div class="orders"></div>
+    </div>
+
+    <hr class="ruler" />
+
+    <p class="order_list">ordered item's</p>
+    <div class="bill">
+    <table class="tablehead">
+      <tr>
+        <th>food name</th>
+        <th>price</th>
+        <th>quantity</th>
+        <th>total</th>
+      </tr>
+    </table>
+
+    <table class="mytable">
+
+    </table>
+    <p class="finalcheck">total amount = rs.<span class="billAmount"></span></p>
+  </div>
+
+  <hr class="ruler" />
+
+  <div class="takebill">
+    <p class="non-veg" style="color: blue; text-align: left;">check items and make payment</p>
+    <button class="confirm" onclick="makePayment()">make payment</button>
+    <p class="non-veg" style="padding-bottom: 10px; text-align: left;">*for any queries call <a onclick="teammember()" style="text-decoration: underline;">our team member</a></p>
+  </div>
+    
+    <footer id="footer">
+      <div class="about">
+        <p>about</p>
+      </div>
+    <div class="contact">
+      <div class="visit">
+        <h2>visit us</h2>
+        <p>n0.13, main street, <br> vandavasi, tiruvannamalai-604408, <br> tamil nadu, india.</p>
+      </div>
+      <div class="timing">
+        <h2>dining hours</h2>
+        <p>mon - thu : 11.00 a.m - 3.00 p.m <br>
+        fri & sat : 11.00 a.m - 10.00 p.m <br>
+        sun : 12.00 a.m - 9.00 p.m
+        </p>
+      </div>
+      <div class="contactus">
+        <h2>contact us</h2>
+        <p>Ph.No: 2152865862 <br>Mail: familyrestaurent@gmail.com</p>
+      </div>
+    </div>
+    <p class="rights">© 2023 family restaurent, all rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

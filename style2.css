@@ -1,0 +1,444 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    text-transform: capitalize;
+    margin: 0%;
+    background: linear-gradient(-45deg, #A9F1DF, #ffbbbb);
+    background-size: 500% 500%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    max-width: 1400px;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(58, 58, 58);
+    position: fixed;
+}
+.head{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.list{
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.list a:hover{
+    color: rgb(238, 251, 251);
+}
+a{
+    text-decoration: none;
+    color: rgb(115, 120, 148);
+    cursor: pointer;
+}
+.home{
+    border: 0px solid black;
+    background-color: rgb(58, 58, 58);
+    text-transform: capitalize;
+    color: rgb(115, 120, 148);
+}
+
+.home:hover{
+    color: rgb(238, 251, 251);
+    cursor: pointer;
+}
+
+.amount{
+    position: fixed;
+    font-size: 20px;
+    top: 60px;
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    right: 0%;
+    background-color: rgb(86, 86, 86);
+    color: rgb(192, 188, 188);
+    width: 175px;
+    border-radius: 0px 0px 0px 10px;
+    opacity: .9;
+}
+.greet{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(104, 72, 97);
+    text-align: center;
+}
+.inputname{
+    font-size: 29px;
+    text-transform: uppercase;
+    color: rgb(85, 75, 137);
+    text-align: center;
+}
+.non-veg{
+    margin-left: 15px;
+    padding-top: 5px;
+    color: red;
+}
+.veg{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.vegimg{
+    height: 40px;
+    width: 40px;
+}
+.vegkey{
+    padding-left: 10px;
+    font-size: 30px;
+    color: green;
+}
+.vegkey span{
+    color: black;
+}
+.ruler{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(81, 81, 82);
+}
+.veg_items{
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgb(81, 81, 82);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.veg_items div{
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(81, 81, 82);
+    border-radius: 15px;
+}
+.veg_items img{
+    height: 150px;
+    width: 200px;
+    border: 1.5px solid rgb(58, 58, 58);
+    border-radius: 15px;
+}
+.veg_items p{
+    align-items: center;
+    text-align: center;
+}
+.veg_items button{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: cadetblue;
+    border: 1.5px solid grey;
+    height: 20px;
+    border-radius: 5px;
+    color: darkslategrey;
+}
+.veg_items button:hover{
+    cursor: pointer;
+    background-color: darkslategray;
+    color: cadetblue;
+}
+.veg_items button:active{
+    color: darkslategray;
+    background-color: cadetblue;
+}
+.nv{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.nvimg{
+    height: 40px;
+    width: 40px;
+}
+.nvkey{
+    padding-left: 10px;
+    font-size: 30px;
+    color: red;
+}
+.nvkey span{
+    color: black;
+}
+
+.nv_items{
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgb(81, 81, 82);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nv_items div{
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(81, 81, 82);
+    border-radius: 15px;
+}
+.nv_items img{
+    height: 150px;
+    width: 200px;
+    border: 1.5px solid rgb(58, 58, 58);
+    border-radius: 15px;
+}
+.nv_items p{
+    align-items: center;
+    text-align: center;
+}
+.nv_items button{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: cadetblue;
+    border: 1.5px solid grey;
+    height: 20px;
+    border-radius: 5px;
+    color: darkslategrey;
+}
+.nv_items button:hover{
+    cursor: pointer;
+    background-color: darkslategray;
+    color: cadetblue;
+}
+.nv_items button:active{
+    color: darkslategray;
+    background-color: cadetblue;
+}
+
+.bev{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.bevimg{
+    height: 40px;
+    width: 40px;
+}
+.bevkey{
+    padding-left: 10px;
+    font-size: 30px;
+    color: rgb(80, 78, 199);
+}
+.bevkey span{
+    color: black;
+}
+
+.bev_items{
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgb(81, 81, 82);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.bev_items div{
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(81, 81, 82);
+    border-radius: 15px;
+}
+.bev_items img{
+    height: 150px;
+    width: 200px;
+    border: 1.5px solid rgb(58, 58, 58);
+    border-radius: 15px;
+}
+.bev_items p{
+    align-items: center;
+    text-align: center;
+}
+.bev_items button{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: cadetblue;
+    border: 1.5px solid grey;
+    height: 20px;
+    border-radius: 5px;
+    color: darkslategrey;
+}
+.bev_items button:hover{
+    cursor: pointer;
+    background-color: darkslategray;
+    color: cadetblue;
+}
+.bev_items button:active{
+    color: darkslategray;
+    background-color: cadetblue;
+}
+
+.order{
+    margin: 20px 0px 20px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.order button{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+    background: linear-gradient( rgb(175, 206, 245), rgb(53, 30, 129));
+    color: rgb(231, 232, 231);
+    opacity: 0.89;
+}
+
+.order button:hover{
+    background: linear-gradient(rgb(53, 30, 129), rgb(175, 206, 245));
+    color: black;
+    border: 2px solid rgb(231, 232, 231);
+}
+.order button:active{
+    background: linear-gradient( rgb(175, 206, 245), rgb(53, 30, 129));
+}
+
+.order_list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: darkslategrey;
+}
+footer{
+    background-color: rgb(58, 58, 58);
+    color: aliceblue;
+}
+
+.about p{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: space-around;
+    text-align: center;
+}
+.contact h2{
+    text-transform: uppercase;
+}
+.contact div{
+    padding-top: 20px;
+}
+.contact p{
+    padding-top: 10px;
+}
+.contactus p{
+    text-transform: none;
+}
+.rights{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.bill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bill table{
+    width: 500px;
+    margin-left: 75px;
+}
+.mytable{
+    margin-top: 20px
+}
+.bill th{
+    width: 140px;
+    padding-left: 10px;
+    text-align: left;
+}
+.bill td{
+    padding-left: 10px;
+    width: 140px;
+    text-align: left;
+}
+
+.finalcheck{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.takebill{
+    margin: 20px 0px 20px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.takebill button{
+    margin: 20px 0px 15px 0px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+    background: linear-gradient( rgb(9, 9, 9), rgb(117, 113, 117));
+    color: rgb(176, 220, 227);
+    opacity: 0.89;
+}
+
+.takebill button:hover{
+    background: linear-gradient(rgb(92, 91, 92), rgb(45, 48, 53));
+    color: black;
+    border: 2px solid rgb(231, 232, 231);
+}
+.takebill button:active{
+    background: linear-gradient( rgb(9, 9, 9), rgb(117, 113, 117));
+}
